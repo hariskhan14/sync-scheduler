@@ -1,6 +1,6 @@
 # Sync Scheduler
 
-`sync_scheduler` uses `gocron` and `go-redis` library to provide job scheduling and distributed locking under one library while abstracting out all the inner details.
+Sync Scheduler uses `gocron` and `go-redis` library to provide job scheduling and distributed locking under one library while abstracting out all the inner details.
 
 ## Code
 ###Creation
