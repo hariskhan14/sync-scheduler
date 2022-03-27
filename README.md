@@ -3,7 +3,7 @@
 Sync Scheduler uses `gocron` and `go-redis` library to provide job scheduling and distributed locking under one library while abstracting out all the inner details.
 
 ## Code
-###Creation
+### Creation
 ```
 s7l := sync_scheduler.NewSyncScheduler(name, expiry, 
     sync_scheduler.RedisOptions{
@@ -18,7 +18,7 @@ s7l := sync_scheduler.NewSyncScheduler(name, expiry,
 - `Password` is the password of the Redis server (Optional).
 - `DB` is the database number of the Redis server.
 
-###Configuration
+### Configuration
 ```
 err := s7l.Every(1).Seconds().KeepLocked().Do(func, ...params)
 ```
@@ -28,7 +28,7 @@ err := s7l.Every(1).Seconds().KeepLocked().Do(func, ...params)
 - `Do(func, ...params)` is the function reference with the parameters to be executed.
 - Returns `error` if the job could not be scheduled. 
 
-###In Action
+### In Action
 ```
 s7l.StartAsync()
 ```
