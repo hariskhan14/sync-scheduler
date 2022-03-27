@@ -1,4 +1,4 @@
-module gitlab.com/sync_scheduler
+module github.com/hariskhan14/sync-scheduler
 
 go 1.18
 

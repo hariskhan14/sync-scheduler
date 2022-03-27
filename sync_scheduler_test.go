@@ -1,8 +1,8 @@
 package sync_scheduler_test
 
 import (
+	"github.com/hariskhan14/sync-scheduler"
 	"github.com/stretchr/testify/require"
-	"gitlab.com/sync_scheduler"
 	"testing"
 	"time"
 )
